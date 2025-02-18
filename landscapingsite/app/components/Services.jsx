@@ -16,7 +16,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-zinc-800 text-white">
+    <section id="services" className="py-20 bg-zinc-100 text-black">
       <div className="container mx-auto px-4">
         <h2 className="md:text-4xl text-3xl mb-10">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
@@ -27,7 +27,7 @@ export default function Services() {
             >
               
               <h3 className="text-2xl mb-4">{service.name}.</h3>
-              <p className="text-gray-300">{service.description}</p>
+              <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
         </div>
