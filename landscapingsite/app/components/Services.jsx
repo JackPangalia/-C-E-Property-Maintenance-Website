@@ -1,33 +1,55 @@
+import Image from "next/image"
 
 const services = [
-  { name: "Pressure Washing", description: "Revitalize your surfaces with our high-powered cleaning." },
-  { name: "Lawn Care",  description: "Keep your lawn lush and manicured with our expert care." },
+  {
+    name: "Pressure Washing",
+    description: "Revitalize your surfaces with our high-powered cleaning.",
+    image: "/frontyard.jpg",
+  },
+  {
+    name: "Lawn Care",
+    description: "Keep your lawn lush and manicured with our expert care.",
+    image: "/grassyard.jpg",
+  },
   {
     name: "Leaf Removal",
     description: "Maintain a clean landscape with our efficient leaf removal",
+    image: "/hero_house.jpg",
   },
-  { name: "Junk Removal", description: "Clear your space of unwanted items with our removal service." },
+  {
+    name: "Junk Removal",
+    description: "Clear your space of unwanted items with our removal service.",
+    image: "/grassyard.jpg",
+  },
   {
     name: "Snow Removal",
     description: "Stay safe and accessible during winter with our snow clearing.",
+    image: "/frontyard.jpg",
   },
-
 ]
 
 export default function Services() {
   return (
     <section id="services" className="py-20 bg-zinc-100 text-black">
       <div className="container mx-auto px-4">
-        <h2 className="md:text-4xl text-3xl mb-10">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+        <h2 className="md:text-4xl text-3xl mb-10 font-bold">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {services.map((service) => (
             <div
               key={service.name}
-              className="bg-white/1 p-8 transition-transform duration-300 hover:-translate-y-2 " 
+              className="bg-white overflow-hidden transition-transform duration-300 hover:-translate-y-2"
             >
-              
-              <h3 className="text-2xl mb-4">{service.name}.</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <Image
+                src={service.image || "/placeholder.svg"}
+                alt={service.name}
+                width={400}
+                height={400}
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
+                <p className="text-gray-600 text-sm">{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
