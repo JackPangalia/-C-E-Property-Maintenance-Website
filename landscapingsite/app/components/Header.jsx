@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-white z-10 p-4 md:p-6">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-lg">C&E Property Management</h1>
+        <h1 className="text-lg">C&E Property Maintenance</h1>
         <nav className="hidden md:block">
           <ul className="flex gap-4">
             <li>
@@ -64,4 +64,3 @@ const Header = () => {
 }
 
 export default Header
-
