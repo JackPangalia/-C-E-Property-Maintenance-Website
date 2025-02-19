@@ -25,7 +25,7 @@ export default function About() {
           </div>
           <div className="lg:w-1/2">
             <Image
-              src="/frontyard.jpg"
+              src="/lm3.jpg"
               alt="Our team at work"
               width={1920}
               height={1080}

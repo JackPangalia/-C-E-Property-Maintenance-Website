@@ -26,7 +26,7 @@ export default function Mission() {
           </div>
           <div className="lg:w-1/2">
             <Image
-              src="/grassyard.jpg"
+              src="/lm2.jpg"
               alt="Our team at work"
               width={1920}
               height={1080}

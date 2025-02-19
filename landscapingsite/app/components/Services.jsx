@@ -1,32 +1,34 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const services = [
   {
     name: "Pressure Washing",
-    description: "Revitalize your surfaces with our high-powered cleaning.",
-    image: "/frontyard.jpg",
+    description:
+      "Revitalize your surfaces with our high-powered cleaning.Including but not limited from Driveways, Sidewalks, Retaining walls, Gutters & Much more.",
+    image: "/washingphot.jpg",
   },
   {
     name: "Lawn Care",
-    description: "Keep your lawn lush and manicured with our expert care.",
-    image: "/grassyard.jpg",
+    description: "Keep your lawn lush and manicured with our expert care. We offer Edgeing, Lawn Mowing, Weed Wacking, Pruning.",
+    image: "/lm1.jpg",
   },
   {
     name: "Leaf Removal",
     description: "Maintain a clean landscape with our efficient leaf removal",
-    image: "/hero_house.jpg",
+    image: "/lb1.jpg",
   },
   {
-    name: "Junk Removal",
+    name: "Light Junk Removal",
     description: "Clear your space of unwanted items with our removal service.",
-    image: "/grassyard.jpg",
+    image: "/junk removal.jpg",
   },
   {
     name: "Snow Removal",
-    description: "Stay safe and accessible during winter with our snow clearing.",
-    image: "/frontyard.jpg",
+    description:
+      "Stay safe and accessible during winter with our snow clearing. We offer salting, sanding of driveways and all major walkways.",
+    image: "/snow removal.jpg",
   },
-]
+];
 
 export default function Services() {
   return (
@@ -48,13 +50,12 @@ export default function Services() {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-                <p className="text-gray-600 text-sm">{service.description}</p>
+                <p className="text-gray-900 text-md">{service.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-
