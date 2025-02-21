@@ -80,7 +80,7 @@ export default function Contact() {
             Professional property maintenance services you can trust. Get a
             quote today.
           </p>
-          <p>Email: kn6787@gmail.com</p>
+          <p>Email: cepropertymaintenace@gmail.com</p>
           <p>Phone: 604-442-8874 or 604-760-4892</p>
         </div>
       </div>

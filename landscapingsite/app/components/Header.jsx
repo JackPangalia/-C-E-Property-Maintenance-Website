@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,9 +15,9 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-white z-10 p-4 md:p-6">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-lg">C&E Property Maintenance</h1>
+        <Image src = '/logo.jpeg' alt = 'logo-img' width = {200} height = {200} className = 'h-24 w-auto'/>
         <nav className="hidden md:block">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 text-xl">
             <li>
               <Link href="#services" className="hover:text-gray-600">
                 Services
@@ -40,7 +41,7 @@ const Header = () => {
       </div>
       {isMenuOpen && (
         <nav className="md:hidden mt-4 h-screen">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-2 text-xl ml-2">
             <li>
               <Link href="#services" className="block py-2 hover:bg-gray-100" onClick={toggleMenu}>
                 Services
