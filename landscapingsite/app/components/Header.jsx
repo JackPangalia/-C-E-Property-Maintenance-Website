@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 bg-white z-10 p-4 md:p-6">
+    <header className="sticky top-0 bg-white z-10  p-2">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <Image
@@ -21,7 +22,7 @@ const Header = () => {
             alt="logo-img"
             width={200}
             height={200}
-            className="h-14 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
         <nav className="hidden md:block">

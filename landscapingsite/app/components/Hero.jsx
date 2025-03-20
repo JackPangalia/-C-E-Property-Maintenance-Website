@@ -8,16 +8,16 @@ export default function Hero() {
   // Array of slide data with images, headings, subheadings, and links
   const slides = [
     {
-      image: "/image1.jpg",
+      image: "/image0.jpeg",
       heading: "Elevate Your Property",
-      subheading: "With presure washing",
+      subheading: "With pressure washing",
       link: "/services",
       linkText: "Learn more",
     },
     {
-      image: "/image0.jpeg",
+      image: "/image1.jpg",
       heading: "Elevate Your Property",
-      subheading: "With roof clearning",
+      subheading: "With roof cleaning",
       link: "/services",
       linkText: "Learn more",
     },
