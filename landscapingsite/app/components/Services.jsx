@@ -5,7 +5,7 @@ const services = [
     name: "Pressure Washing",
     description:
       "Revitalize your surfaces with our high-powered cleaning.Including but not limited from Driveways, Sidewalks, Retaining walls, Gutters & Much more.",
-    image: "/washingphot.jpg",
+    image: "/presurewash.png",
   },
   {
     name: "Lawn Care",

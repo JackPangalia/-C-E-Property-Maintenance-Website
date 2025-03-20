@@ -1,35 +1,43 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
-import Image from "next/image"
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="sticky top-0 bg-white z-10 p-4 md:p-6">
       <div className="container mx-auto flex justify-between items-center">
-        <Image src = '/logo.jpeg' alt = 'logo-img' width = {200} height = {200} className = 'h-24 w-auto'/>
+        <Link href="/">
+          <Image
+            src="/logo.jpeg"
+            alt="logo-img"
+            width={200}
+            height={200}
+            className="h-14 w-auto"
+          />
+        </Link>
         <nav className="hidden md:block">
           <ul className="flex gap-4 text-xl">
             <li>
-              <Link href="#services" className="hover:text-gray-600">
+              <Link href="/services" className="hover:text-gray-600">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:text-gray-600">
+              <Link href="/#about" className="hover:text-gray-600">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="hover:text-gray-600">
+              <Link href="/#contact" className="hover:text-gray-600">
                 Contact
               </Link>
             </li>
@@ -43,17 +51,29 @@ const Header = () => {
         <nav className="md:hidden mt-4 h-screen">
           <ul className="flex flex-col gap-2 text-xl ml-2">
             <li>
-              <Link href="#services" className="block py-2 hover:bg-gray-100" onClick={toggleMenu}>
+              <Link
+                href="#services"
+                className="block py-2 hover:bg-gray-100"
+                onClick={toggleMenu}
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link href="#about" className="block py-2 hover:bg-gray-100" onClick={toggleMenu}>
+              <Link
+                href="#about"
+                className="block py-2 hover:bg-gray-100"
+                onClick={toggleMenu}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="block py-2 hover:bg-gray-100" onClick={toggleMenu}>
+              <Link
+                href="#contact"
+                className="block py-2 hover:bg-gray-100"
+                onClick={toggleMenu}
+              >
                 Contact
               </Link>
             </li>
@@ -61,7 +81,7 @@ const Header = () => {
         </nav>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
