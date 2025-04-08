@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "C&E Property Management - Home",
+  title: "C&E Property Maintenace - Home",
   description: "Professional property maintenance services you can trust.",
+  icons: {
+    icon: '/logo.jpeg'
+  }
 };
 
 export default function RootLayout({ children }) {
